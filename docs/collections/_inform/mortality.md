@@ -19,7 +19,7 @@ The INFORM All-Cause Mortality CRF for death events occurring in the hospital is
 <a target="_blank" href="https://www.who.int/healthinfo/statistics/verbalautopsystandards/en/">2016 WHO Verbal Autopsy Website</a>
 
 ### Paper based CRFs
-While the INFORM instruments are ideally suited for electronic data capture, we recognize that all sites may not have this capability. For this reason, the INFORM All-Cause Mortality CRF for deaths occurring in a health facility and the components of the 2016 WHO Verbal Autopsy   are also available in a paper-based format in the repository below: 
+While the INFORM instruments are ideally suited for electronic data capture, we recognize that all sites may not have this capability. For this reason, the INFORM All-Cause Mortality CRF for deaths occurring in a health facility and the components of the 2016 WHO Verbal Autopsy are also available in a paper-based format in the repository below: 
 
 <a target="_blank" href="https://github.com/INFORMprojectsite/INFORM/tree/master/All-Cause%20Mortality%20Tools/Case%20Report%20Forms/Paper">Repository for paper based CRF and 2016 WHO Verbal Autopsy</a>
 
@@ -35,4 +35,4 @@ To assess all-cause child mortality differences between children who are HEU and
 
 <a target="_blank" href="https://github.com/INFORMprojectsite/INFORM/tree/master/All-Cause%20Mortality%20Tools/Data%20Analysis%20Tools/STATA">Repository for STATA code</a>
 
-InterVA, the WHO recommended software for analyze datasets generated through the use of the 2016 WHO Verbal Autopsy instrument, can be accessed in the following repository: *Repository for InterVA Data Analysis Tool:* [Link](link-target)
+InterVA, the WHO recommended software for analyze datasets generated through the use of the 2016 WHO Verbal Autopsy instrument, can be accessed in the following repository: <a target="_blank" href="">Repository for InterVA Data Analysis Tool</a>
