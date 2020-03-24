@@ -1,0 +1,50 @@
+title: INFORM
+description: > # this means to ignore newlines until "baseurl:"
+  INFORM – HIV FREE: A Harmonized INfrastructure FOR Monitoring Health Outcomes of the HIV FREE Generation.
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Banner settings
+video:  # add banner video. Add your video file to the folder video
+banner-title: INFORM Project # add banner title
+banner-desc: > 
+  Using data harmonization to understand and improve the health of children who are HIV-exposed and uninfected
+banner-sub-desc: Funded by the National Institute of Child Health and Human Development (R21 HD093531)
+
+
+# Collections
+collections_dir: collections
+
+collections:
+    inform:
+      output: true
+      permalink: /:name
+
+# Author settings
+author-pic: face.jpg # your photo
+author-name: # your name
+about-author: # about author
+email: your-email@domain.com # your email
+phone: (496)-169-6557 # your pnone number
+website: https://dwayne.example.com # you website
+
+# Disqus
+discus_identifier: mr-brown # add your discus identifier.  Not your username.  To get this, register your forum here with a unique ID: https://disqus.com/admin/create/
+
+# Newsletter
+mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Tracker
+analytics:
+
+# Build settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-sitemap
+
+gems:
+  - jekyll-sitemap
+
+include: ["collections"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

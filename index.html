@@ -1,0 +1,24 @@
+---
+layout: main
+---
+
+{% assign nodes = site.inform | sort:"order" %}
+{% for inform in nodes %}
+<div class="chapter">
+  <a href="{{inform.url | prepend: site.baseurl}}">
+    {% if inform.img %}
+      <img src={{ "/assets/img/" | prepend: site.baseurl | append: inform.img }} alt="{{inform.title}}">
+    {% else %}
+    <div class="gradient-block" data-color="{{inform.color}}" data-color2="{{inform.color2}}"></div>
+      {% endif %}
+  </a>
+  <a href="{{inform.url | prepend: site.baseurl}}">
+    <div class="chapter_inner">
+      <h3 class="chapter_title">{{inform.title}}</h3>
+      {% if inform.sub-title %}
+      <h4 class="chapter_sub_title">{{inform.sub-title}}</h4>
+      {% endif %}
+    </div>
+  </a>
+</div>
+{% endfor %}
