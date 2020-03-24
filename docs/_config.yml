@@ -1,7 +1,7 @@
 title: INFORM
 description: > # this means to ignore newlines until "baseurl:"
   INFORM – HIV FREE: A Harmonized INfrastructure FOR Monitoring Health Outcomes of the HIV FREE Generation.
-permalink: ':title/'
+permalink: '/'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
