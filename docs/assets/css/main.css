@@ -4292,6 +4292,10 @@ cite {
   margin-bottom: 1.5rem;
 }
 
+.post a {
+  font-weight: bold;
+}
+
 .post header {
   position: relative;
   overflow: hidden;
