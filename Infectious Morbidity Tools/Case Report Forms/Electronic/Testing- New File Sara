@@ -1,1 +1,29 @@
-test
+﻿Variable / Field Name	Form Name	Section Header	Field Type	Field Label	Choices, Calculations, OR Slider Labels	Field Note	Text Validation Type OR Show Slider Number	Text Validation Min	Text Validation Max	Identifier?	Branching Logic (Show field only if...)	Required Field?	Custom Alignment	Question Number (surveys only)	Matrix Group Name	Matrix Ranking?	Field Annotation
+record_id	inform_baseline_crf		text	Record ID													
+record_id_04788c	inform_baseline_crf		text	Record ID													
+icf	inform_baseline_crf		yesno	Did the caregiver provide informed consent for this study?													
+icfdate	inform_baseline_crf		text	Date consent form was obtained			date_dmy				[icf] = '1'						
+icfbinder	inform_baseline_crf		yesno	Was the signed consent form saved in the study binder?							[icf] = '1'						
+pid	inform_baseline_crf		text	Participant ID (to match on consent form)													
+retro	inform_baseline_crf		yesno	Was the data collecting in this redcap from a previous hospitalized patient, using only medical records?													
+relation1	inform_baseline_crf	Baseline Information	radio	Relationship to the child who is/was hospitalized:	1, Biological Mother | 2, Biological Father | 3, Aunt | 4, Uncle | 5, Grandmother | 6, Grandfather | 7, Sibling | 8, Non-biological female guardian | 9, Non-biological male guardian | 10, Other												
+relationoth1	inform_baseline_crf		text	Please specify other relationship to the child who is/was hospitalized:							[relation1]='1'						
+hiv1	inform_baseline_crf		yesno	Is the HIV status of the biological mother known?													
+child_exposure	inform_baseline_crf		yesno	Is the HIV - EXPOSURE status of the child known?							[hiv1] = '0'						
+child_expos_stat	inform_baseline_crf		radio	If yes, what is their exposure status	1, HIV exposed | 2, HIV unexposed						[child_exposure] = '1'						
+hivstatus1	inform_baseline_crf		radio	If yes, what is their HIV status	0, Negative | 1, Positive						[hiv1] = '1'						
+hivyear1	inform_baseline_crf		text	"Approximate year of HIV diagnosis
+
+{hivyearunk1}"		YYYY	number	1920	2025		[hiv1] = '1'						
+hivyearunk1	inform_baseline_crf		radio	Unknown HIV diagnosis year	1, Unknown year of diagnosis						[hiv1] = '1'						
+arv1	inform_baseline_crf		radio	Is the biological mother on ARVs?	1, Yes | 0, No | 2, Unknown						[hiv1]='1'						
+arvyear1	inform_baseline_crf		text	"Approximate year of ARV initiation:
+
+{arvyearunk1}"		YYYY	number	1920	2025		[arv1]='1'						
+arvyearunk1	inform_baseline_crf		radio	Unknown ARV initiation year	1, Unknown year of ARV initiation						[arv1] = '1'						
+arvpreg1	inform_baseline_crf		radio	Was the biological mother on ARVs during the pregnancy of the child who is/was hospitalized?	1, Yes | 0, No | 2, Unknown						[arv1] = '1'						
+momage1	inform_baseline_crf		text	Biological mother age (at present)													
+momagebirth1	inform_baseline_crf		text	Biological mother's age at the time of the hospitalized child's birth													
+mompreg1	inform_baseline_crf		text	Total number of pregnancies of biological mother:													
+momlivebirth1	inform_baseline_crf		text	Total number of live births of biological mother:													
+mompregchild1	inform_baseline_crf		text	Of the biological mothers pregnancies, what is the number of this child 													
